@@ -19,7 +19,7 @@ const ArticleDetails = lazy(
 const HomePage = memo(function HomePage() {
   const { articles, loading, error, availableCategories, availableSources } =
     useArticleData();
-  console.log(articles.length);
+  console.log(articles?.length);
   const {
     filteredArticles,
     searchQuery,

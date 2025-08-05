@@ -13,9 +13,7 @@ export const newsApi = createApi({
   endpoints: (builder) => ({
     getTopHeadlines: builder.query<Article[], { category?: string }>({
       query: ({ category }) => {
-        const url = `top-headlines?country=us&pageSize=20${
-          category ? `&category=${category}` : ""
-        }`;
+        const url = `news${category ? `?category=${category}` : ""}`;
         return url;
       },
       transformResponse: (response: any) => {
