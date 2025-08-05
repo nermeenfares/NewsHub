@@ -1,0 +1,168 @@
+{
+  "auth": {
+    "authTemplate": {
+      "Welcome To": "مرحباً بك في"
+    },
+    "login": {
+      "title": "تسجيل الدخول",
+      "subtitle": "أدخل بياناتك للوصول إلى حسابك",
+      "username": "اسم المستخدم",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "submit": "تسجيل الدخول",
+      "submitting": "جاري تسجيل الدخول...",
+      "welcomeBack": "مرحباً بعودتك!",
+      "placeholder": {
+        "username": "أدخل اسم المستخدم",
+        "password": "أدخل كلمة المرور"
+      }
+    }
+  },
+  "common": {
+    "language": "اللغة",
+    "theme": "المظهر",
+    "light": "فاتح",
+    "dark": "داكن",
+    "english": "English",
+    "arabic": "العربية",
+    "dashboard": "لوحة التحكم",
+    "logout": "تسجيل الخروج",
+    "settings": "الإعدادات"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "about": "حول",
+    "contact": "اتصل بنا",
+    "services": "الخدمات"
+  },
+  "Index": {
+    "title": "مرحباً بكم في Next.js مع next-intl!",
+    "description": "هذا مثال للتدويل باستخدام next-intl.",
+    "change_language": "تغيير اللغة",
+    "hello": "مرحباً"
+  },
+  "AboutSection": {
+    "strategic_goals_title": "أهدافنا الاستراتيجية",
+    "strategic_goals_description": "ويعمل الصندوق الصناعي بشكل فعال لتوفير الدعم المالي والاستشاري وتقديم الحلول المبتكرة لنمو وتطوير الصناعة المحلية ورفع مستوى أدائها، لتحقيق الأهداف التالية:"
+  },
+  "BottomNavigationSection": {
+    "next_topic": "الموضوع التالي",
+    "board_of_directors": "مجلس الإدارة",
+    "home_page": "الصفحة الرئيسية",
+    "interactive_report_2023": "التقرير التفاعلي 2023"
+  },
+  "StaticsComponent": {
+    "billion_dollars": "مليار دولار"
+  },
+  "TabsSection": {
+    "tab1_timeline_item1_label_year": "2023",
+    "tab1_timeline_item1_label_value": "150",
+    "tab1_timeline_item1_label_unit": "مليار ريال",
+
+    "tab1_timeline_item2_label_year": "2022",
+    "tab1_timeline_item2_label_value": "85",
+    "tab1_timeline_item2_label_unit": "مليار ريال",
+
+    "tab1_timeline_item3_label_year": "2021",
+    "tab1_timeline_item3_label_value": "60",
+    "tab1_timeline_item3_label_unit": "مليار ريال",
+
+    "tab2_timeline_item1_label_year": "2023",
+    "tab2_timeline_item1_label_value": "200",
+    "tab2_timeline_item1_label_unit": "مشروع",
+
+    "tab2_timeline_item2_label_year": "2022",
+    "tab2_timeline_item2_label_value": "180",
+    "tab2_timeline_item2_label_unit": "مشروع",
+
+    "tab2_timeline_item3_label_year": "2021",
+    "tab2_timeline_item3_label_value": "160",
+    "tab2_timeline_item3_label_unit": "مشروع",
+
+    "tab3_timeline_item1_label_year": "2023",
+    "tab3_timeline_item1_label_value": "12",
+    "tab3_timeline_item1_label_unit": "إدارة",
+
+    "tab3_timeline_item2_label_year": "2022",
+    "tab3_timeline_item2_label_value": "500",
+    "tab3_timeline_item2_label_unit": "موظف",
+
+    "tab3_timeline_item3_label_year": "2021",
+    "tab3_timeline_item3_label_value": "8",
+    "tab3_timeline_item3_label_unit": "فروع",
+
+    "tab4_timeline_item1_label_year": "2023",
+    "tab4_timeline_item1_label_value": "9",
+    "tab4_timeline_item1_label_unit": "عضو",
+
+    "tab4_timeline_item2_label_year": "2022",
+    "tab4_timeline_item2_label_value": "24",
+    "tab4_timeline_item2_label_unit": "اجتماع",
+
+    "tab4_timeline_item3_label_year": "2021",
+    "tab4_timeline_item3_label_value": "15",
+    "tab4_timeline_item3_label_unit": "قرار",
+
+    "tab5_timeline_item1_label_year": "عام 2019م",
+    "tab5_timeline_item1_label_value": "105",
+    "tab5_timeline_item1_label_unit": "مليار ريال",
+
+    "tab5_timeline_item2_label_year": "عام 2005م",
+    "tab5_timeline_item2_label_value": "20",
+    "tab5_timeline_item2_label_unit": "مليار ريال",
+
+    "tab5_timeline_item3_label_year": "تأسس عام برأس مال مبدئي",
+    "tab5_timeline_item3_label_value": "500",
+    "tab5_timeline_item3_label_unit": "مليون ريال",
+    "tab1_title": "كلمة سمو الرئيس التنفيذي",
+    "tab1_content_title": "كلمة سمو الرئيس التنفيذي",
+    "tab1_content_description": "نرحب بكم في التقرير السنوي لصندوق التنمية الصناعية السعودي، والذي يعكس إنجازاتنا ومساهماتنا في دعم القطاع الصناعي والاقتصاد الوطني.",
+    "tab1_timeline_item1_label": "إجمالي الاستثمارات",
+    "tab1_timeline_item2_label": "القروض المقدمة",
+    "tab1_timeline_item3_label": "رأس المال المدفوع",
+    "tab2_title": "كلمة معالي رئيس مجلس الإدارة",
+    "tab2_content_title": "كلمة معالي رئيس مجلس الإدارة",
+    "tab2_content_description": "يسعدني أن أقدم لكم هذا التقرير الذي يوضح الدور المحوري للصندوق في تحقيق أهداف رؤية المملكة 2030 في التنمية الصناعية المستدامة.",
+    "tab2_timeline_item1_label": "المشاريع المدعومة",
+    "tab2_timeline_item2_label": "المشاريع الجديدة",
+    "tab2_timeline_item3_label": "المشاريع المكتملة",
+    "tab3_title": "الهيكل التنظيمي",
+    "tab3_content_title": "الهيكل التنظيمي",
+    "tab3_content_description": "يتكون الصندوق من عدة إدارات متخصصة تعمل بتناغم لتحقيق الأهداف الاستراتيجية وتقديم أفضل الخدمات للعملاء في القطاع الصناعي.",
+    "tab3_timeline_item1_label": "الإدارات الرئيسية",
+    "tab3_timeline_item2_label": "إجمالي الموظفين",
+    "tab3_timeline_item3_label": "الفروع الإقليمية",
+    "tab4_title": "مجلس الإدارة",
+    "tab4_content_title": "مجلس الإدارة",
+    "tab4_content_description": "يضم مجلس الإدارة نخبة من الخبراء والمتخصصين في القطاع المصرفي والصناعي، ويعمل على وضع الاستراتيجيات والسياسات التي تحقق أهداف الصندوق.",
+    "tab4_timeline_item1_label": "أعضاء المجلس",
+    "tab4_timeline_item2_label": "الاجتماعات السنوية",
+    "tab4_timeline_item3_label": "القرارات الاستراتيجية",
+    "tab5_title": "الصندوق في سطور",
+    "tab5_content_title": "الصندوق في سطور",
+    "tab5_content_description": "تأسس صندوق التنمية الصناعية السعودي في عام 1394هـ (1974م)، برأس مال مبدئي بلغ 500 مليون ريال، بغرض دعم التنمية الصناعية لاقتصاد المملكة عن طريق تقديم قروض متوسطة وطويلة أجل للمنشآت الصناعية الجديدة والقائمة. تم رفع رأس المال تدريجياً حتى أصبح 105 مليارات ريال في عام 1440هـ (2019م). وقام الصندوق الصناعي على مدار 50 عاماً بتقديم الدعم الصناعي وفقاً لاحتياجات كل مرحلة من خلال تعزيز فرص الاستثمار الصناعي وتطوير الصناعة المحلية ورفع مستوى أدائها، وتطوير المؤسسات التنافسية، ودعم المبادرات الاستراتيجية، فضلاً عن توسعه في نطاق الدعم ليشمل عدداً من القطاعات الواعدة في مجالات الصناعة والطاقة والتعدين والخدمات اللوجستية، ليكون الممكن المالي الرئيسي للتحول الصناعي والمساهمة في تنمية وتطوير الاقتصاد الوطني.",
+    "unit_billion_riyals": "مليار ريال",
+    "unit_million_riyals": "مليون ريال",
+    "unit_project": "مشروع",
+    "unit_employee": "موظف",
+    "unit_branch": "فرع",
+    "unit_member": "عضو",
+    "unit_meeting": "اجتماع",
+    "unit_decision": "قرار",
+    "year_2019": "عام 2019م",
+    "year_2005": "عام 2005م",
+    "established_with_initial_capital": "تأسس عام برأس مال مبدئي"
+  },
+  "ValueCard": {
+    "customer_success_header": "نجاح العميل",
+    "customer_success_description": "ندعــــم نجــــاح عملائنــــا حيــــث إن نجاحهم هو نجاحنا.",
+    "empowerment_header": "التمكين",
+    "empowerment_description": "نســــعى لتمكين الاخريــــن، لنحقق العمــــل معــــاً ونحقــــق المخرجات بكفاءة عالية",
+    "collaboration_header": "التعاون",
+    "collaboration_description": "ندعــــم نجــــاح عملائنــــا حيــــث إن نجاحهم هو نجاحنا.",
+    "development_header": "التنمية",
+    "development_description": "التنميــــة فــــي صميــــم عملنــــا وهي الدافع لكل ما نقوم به.",
+    "reliability_header": "الاعتمادية",
+    "reliability_description": "يمكن أعتماد علينــــا في أي عمل يوكل إلينا، وبالقرارات التي نتخذها."
+  }
+}
