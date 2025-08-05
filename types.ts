@@ -1,3 +1,25 @@
+import { ComponentType, ReactNode } from "react";
+
+export type ErrorType = "error" | "network" | "server" | "search" | "warning";
+
+export interface ErrorMessageProps {
+  type?: ErrorType;
+  message?: string;
+  description?: string;
+  onRetry?: (() => void) | null;
+  retryText?: string;
+  showIcon?: boolean;
+  className?: string;
+}
+
+export interface EmptyStateProps {
+  title?: string;
+  description?: string;
+  icon?: ComponentType<{ className?: string }>; // Lucide icon or any React icon
+  action?: ReactNode;
+  className?: string;
+}
+
 export interface Article {
   id: string;
   title: string;

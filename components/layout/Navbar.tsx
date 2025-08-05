@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X, Search, Globe } from "lucide-react";
-import { LanguageDropdown } from "../dropdowns/LanguageDropdown";
+import LanguageDropdown from "../dropdowns/LanguageDropdown";
 import { ThemeDropdown } from "../dropdowns/ThemeDropdown";
 
 const Navbar = ({ onSearchToggle, onMobileMenuToggle, isMobileMenuOpen }) => {
@@ -51,7 +51,6 @@ const Navbar = ({ onSearchToggle, onMobileMenuToggle, isMobileMenuOpen }) => {
             </a>
           </nav>
 
-          {/* Search and Mobile Menu */}
           <div className="flex items-center space-x-4">
             <button
               onClick={onSearchToggle}
@@ -59,7 +58,8 @@ const Navbar = ({ onSearchToggle, onMobileMenuToggle, isMobileMenuOpen }) => {
               aria-label="Search"
             >
               <Search className="h-5 w-5" />
-              {/* <LanguageDropdown /> */}
+              {/* <LanguageDropdown />
+              <ThemeDropdown /> */}
               {/* <ThemeDropdown /> */}
             </button>
 

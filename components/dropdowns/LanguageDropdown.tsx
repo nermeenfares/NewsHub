@@ -2,7 +2,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import { DropdownMenuItem } from "@/components/ui/dropdown-menu";
 
-export function LanguageDropdown() {
+function LanguageDropdown() {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -23,3 +23,4 @@ export function LanguageDropdown() {
     </>
   );
 }
+export default LanguageDropdown;

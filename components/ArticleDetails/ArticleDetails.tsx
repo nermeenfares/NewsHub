@@ -50,6 +50,7 @@ const ArticleDetails = ({ article, onBack, onShare }) => {
         url: url,
       });
     } else {
+      // Fallback: copy to clipboard
       navigator.clipboard.writeText(url);
     }
   };
