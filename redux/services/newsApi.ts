@@ -4,7 +4,7 @@ import { Article } from "@/types";
 export const newsApi = createApi({
   reducerPath: "newsApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://newsapi.org/v2/",
+    baseUrl: "/api/",
     prepareHeaders: (headers) => {
       headers.set("Authorization", process.env.NEXT_PUBLIC_NEWSAPI_KEY!);
       return headers;
