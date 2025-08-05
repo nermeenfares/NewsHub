@@ -67,7 +67,16 @@ const ArticlesDisplay = memo(function ArticlesDisplay({
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center space-x-4">
           <span className="text-sm text-gray-600">
-            {articles.length} article{articles.length !== 1 ? "s" : ""} found
+            {loading ? (
+              "Loading articles..."
+            ) : (
+              <>
+                {articles.length} article{articles.length !== 1 ? "s" : ""}{" "}
+                found
+              </>
+            )}
+
+            {/* {articles.length} article{articles.length !== 1 ? "s" : ""} found */}
           </span>
         </div>
 
@@ -106,13 +115,13 @@ const ArticlesDisplay = memo(function ArticlesDisplay({
         </div>
       </div>
 
-      {/* {error && articles.length === 0 && (
+      {error && (
         <ErrorMessage
           type="error"
           message={error}
           onRetry={() => window.location.reload()}
         />
-      )} */}
+      )}
 
       {loading && <LoadingSkeleton />}
 

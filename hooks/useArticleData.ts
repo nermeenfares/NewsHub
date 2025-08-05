@@ -16,7 +16,7 @@ export function useArticleData(): UseArticleDataReturn {
     error: errorGuardian,
   } = useGetGuardianArticlesQuery({ section: "technology" });
   guardianArticles && console.log(guardianArticles);
-  newsApiArticles && console.log(newsApiArticles);
+  newsApiArticles && console.log(guardianArticles);
   const [articles, setArticles] = useState<Article[]>([]);
 
   const mergedArticles = useMemo(() => {
