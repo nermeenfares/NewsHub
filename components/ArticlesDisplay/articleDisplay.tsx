@@ -106,13 +106,13 @@ const ArticlesDisplay = memo(function ArticlesDisplay({
         </div>
       </div>
 
-      {error && articles.length === 0 && (
+      {/* {error && articles.length === 0 && (
         <ErrorMessage
           type="error"
           message={error}
           onRetry={() => window.location.reload()}
         />
-      )}
+      )} */}
 
       {loading && <LoadingSkeleton />}
 
