@@ -106,7 +106,7 @@ const ArticlesDisplay = memo(function ArticlesDisplay({
         </div>
       </div>
 
-      {error && (
+      {error && articles.length === 0 && (
         <ErrorMessage
           type="error"
           message={error}
