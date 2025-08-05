@@ -3,10 +3,6 @@ import { Article, UseArticleDataReturn } from "@/types";
 import { useGetGuardianArticlesQuery } from "@/redux/services/guardianApi";
 import { useGetTopHeadlinesQuery } from "@/redux/services/newsApi";
 
-/**
- * Custom hook for managing article data from multiple sources
- * @returns Article data with loading states and metadata
- */
 export function useArticleData(): UseArticleDataReturn {
   const {
     data: newsApiArticles,
@@ -19,7 +15,8 @@ export function useArticleData(): UseArticleDataReturn {
     isLoading: loadingGuardian,
     error: errorGuardian,
   } = useGetGuardianArticlesQuery({ section: "technology" });
-
+  guardianArticles && console.log(guardianArticles);
+  newsApiArticles && console.log(newsApiArticles);
   const [articles, setArticles] = useState<Article[]>([]);
 
   const mergedArticles = useMemo(() => {
@@ -57,8 +54,9 @@ export function useArticleData(): UseArticleDataReturn {
 
   const loading = loadingNewsApi || loadingGuardian;
   const error =
-    // (errorNewsApi && "Error loading NewsAPI data") ||
-    (errorGuardian && "Error loading Guardian data") || null;
+    (errorNewsApi && "Error loading NewsAPI data") ||
+    (errorGuardian && "Error loading Guardian data") ||
+    null;
 
   return {
     articles,
