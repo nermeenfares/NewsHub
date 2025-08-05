@@ -13,24 +13,23 @@ export const metadata: Metadata = {
   title: "NewsHub - Your Global News Source",
   description:
     "Stay informed with the latest news from trusted sources around the world. Search and filter articles by category, source, and more.",
-  keywords:
-    "news, articles, breaking news, world news, technology, business, sports",
-  authors: [{ name: "NewsHub Team" }],
-  openGraph: {
-    title: "NewsHub - Your Global News Source",
-    description:
-      "Stay informed with the latest news from trusted sources around the world.",
-    type: "website",
-    locale: "en_US",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "NewsHub - Your Global News Source",
-    description:
-      "Stay informed with the latest news from trusted sources around the world.",
-  },
-  viewport: "width=device-width, initial-scale=1",
-  robots: "index, follow",
+  // keywords:
+  //   "news, articles, breaking news, world news, technology, business, sports",
+  // authors: [{ name: "NewsHub Team" }],
+  // openGraph: {
+  //   title: "NewsHub - Your Global News Source",
+  //   description:
+  //     "Stay informed with the latest news from trusted sources around the world.",
+  //   type: "website",
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "NewsHub - Your Global News Source",
+  //   description:
+  //     "Stay informed with the latest news from trusted sources around the world.",
+  // },
+  // viewport: "width=device-width, initial-scale=1",
+  // robots: "index, follow",
 };
 
 export default function RootLayout({
