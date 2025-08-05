@@ -22,20 +22,17 @@ export function useArticleData(): UseArticleDataReturn {
 
   const [articles, setArticles] = useState<Article[]>([]);
 
-  // Merge articles from both sources
   const mergedArticles = useMemo(() => {
     if (!newsApiArticles || !guardianArticles) return [];
 
     const merged = [...newsApiArticles, ...guardianArticles];
 
-    // Sort by publication date (newest first)
     return merged.sort(
       (a, b) =>
         new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
     );
   }, [newsApiArticles, guardianArticles]);
 
-  // Extract unique categories and sources
   const { availableCategories, availableSources } = useMemo(() => {
     const categoriesSet = new Set<string>();
     const sourcesSet = new Set<string>();
@@ -54,12 +51,10 @@ export function useArticleData(): UseArticleDataReturn {
     };
   }, [mergedArticles]);
 
-  // Update articles state when merged articles change
   useEffect(() => {
     setArticles(mergedArticles);
   }, [mergedArticles]);
 
-  // Determine loading and error states
   const loading = loadingNewsApi || loadingGuardian;
   const error =
     (errorNewsApi && "Error loading NewsAPI data") ||

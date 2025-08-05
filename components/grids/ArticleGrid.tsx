@@ -26,7 +26,6 @@ const AnimatedArticleGrid = memo(function AnimatedArticleGrid({
 }: AnimatedArticleGridProps) {
   const gridRef = useRef<HTMLDivElement>(null);
 
-  // Animate articles on mount and when articles change
   useEffect(() => {
     if (!loading && articles.length > 0 && gridRef.current) {
       const articleElements = gridRef.current.children;
@@ -126,7 +125,6 @@ const AnimatedArticleGrid = memo(function AnimatedArticleGrid({
   );
 });
 
-// Memoized article card component
 const ArticleCard = memo(function ArticleCard({
   article,
   onClick,

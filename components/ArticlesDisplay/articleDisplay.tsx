@@ -5,7 +5,6 @@ import { Article, ViewMode } from "@/types";
 import ArticleList from "@/components/ArticleList";
 import ErrorMessage from "@/components/ErrorMessage";
 
-// Lazy load heavy components
 const AnimatedArticleGrid = lazy(
   () => import("@/components/lazy/AnimatedArticleGrid")
 );
@@ -34,7 +33,6 @@ const ArticlesDisplay = memo(function ArticlesDisplay({
 }: ArticlesDisplayProps) {
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
 
-  // Loading skeleton component
   const LoadingSkeleton = memo(() => (
     <div
       className={`grid gap-6 ${
@@ -66,7 +64,6 @@ const ArticlesDisplay = memo(function ArticlesDisplay({
 
   return (
     <div>
-      {/* View Mode Toggle and Results Count */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center space-x-4">
           <span className="text-sm text-gray-600">
@@ -109,7 +106,6 @@ const ArticlesDisplay = memo(function ArticlesDisplay({
         </div>
       </div>
 
-      {/* Error State */}
       {error && (
         <ErrorMessage
           type="error"
@@ -118,10 +114,8 @@ const ArticlesDisplay = memo(function ArticlesDisplay({
         />
       )}
 
-      {/* Loading State */}
       {loading && <LoadingSkeleton />}
 
-      {/* Articles Content */}
       {!loading && !error && (
         <>
           {viewMode === "grid" ? (
@@ -142,7 +136,6 @@ const ArticlesDisplay = memo(function ArticlesDisplay({
             />
           )}
 
-          {/* Pagination */}
           {pageCount > 1 && (
             <Suspense
               fallback={

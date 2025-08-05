@@ -115,7 +115,6 @@ const ErrorMessage: React.FC<ErrorMessageProps> = ({
   );
 };
 
-// Specialized error components
 export const NetworkError: React.FC<Omit<ErrorMessageProps, "type">> = ({
   onRetry,
   ...props

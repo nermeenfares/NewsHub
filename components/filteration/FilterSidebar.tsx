@@ -36,7 +36,6 @@ const FiltersSidebar = memo(function FiltersSidebar({
   const [showAllSources, setShowAllSources] = useState(false);
   const [sourceSearchQuery, setSourceSearchQuery] = useState("");
 
-  // Handle filter changes
   const handleFilterChange = (key: keyof SearchFilters, value: string) => {
     const newFilters = { ...filters, [key]: value };
     setFilters(newFilters);

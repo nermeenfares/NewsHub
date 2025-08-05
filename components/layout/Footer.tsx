@@ -1,6 +1,5 @@
 import React from "react";
 import { Globe, Twitter, Facebook, Instagram, Mail } from "lucide-react";
-// import { ThemeDropdownItems } from "../dropdowns/ThemeDropdown";
 
 const Footer = () => {
   return (
