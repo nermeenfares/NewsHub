@@ -57,9 +57,8 @@ export function useArticleData(): UseArticleDataReturn {
 
   const loading = loadingNewsApi || loadingGuardian;
   const error =
-    (errorNewsApi && "Error loading NewsAPI data") ||
-    (errorGuardian && "Error loading Guardian data") ||
-    null;
+    // (errorNewsApi && "Error loading NewsAPI data") ||
+    (errorGuardian && "Error loading Guardian data") || null;
 
   return {
     articles,
