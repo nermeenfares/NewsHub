@@ -80,7 +80,7 @@ const ArticlesDisplay = memo(function ArticlesDisplay({
           </span>
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className=" hidden md:flex items-center space-x-2 ">
           <button
             onClick={() => setViewMode("grid")}
             className={`p-2 rounded-md transition-colors ${
