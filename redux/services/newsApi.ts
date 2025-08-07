@@ -4,7 +4,7 @@ import { Article } from "@/types";
 export const newsApi = createApi({
   reducerPath: "newsApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "/api/",
+    baseUrl: "https://newsapi.org/v2/",
     prepareHeaders: (headers) => {
       headers.set("Authorization", process.env.NEXT_PUBLIC_NEWSAPI_KEY!);
       return headers;
@@ -13,7 +13,9 @@ export const newsApi = createApi({
   endpoints: (builder) => ({
     getTopHeadlines: builder.query<Article[], { category?: string }>({
       query: ({ category }) => {
-        const url = `news${category ? `?category=${category}` : ""}`;
+        const url = `top-headlines?country=us&pageSize=20${
+          category ? `&category=${category}` : ""
+        }`;
         return url;
       },
       transformResponse: (response: any) => {
