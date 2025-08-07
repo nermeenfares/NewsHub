@@ -1,19 +1,35 @@
-// import { NextRequest, NextResponse } from "next/server";
+// File: src/store/newsApi.ts (or wherever you have it)
 
-// export async function GET(req: NextRequest) {
-//   const { searchParams } = new URL(req.url);
-//   const category = searchParams.get("category");
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { Article } from "@/types";
 
-//   const url = `https://newsapi.org/v2/top-headlines?country=us&pageSize=20${
-//     category ? `&category=${category}` : ""
-//   }`;
+export const newsApi = createApi({
+  reducerPath: "newsApi",
+  // 1. Point to your own backend's API routes
+  baseQuery: fetchBaseQuery({
+    baseUrl: "/api", // This is the crucial change
+  }),
+  // REMOVED: No need for prepareHeaders to set the Authorization token anymore!
+  endpoints: (builder) => ({
+    getTopHeadlines: builder.query<Article[], { category?: string }>({
+      // 2. The query now builds the URL to your proxy endpoint
+      query: ({ category }) => ({
+        url: "/newsapi", // This hits /api/newsapi
+        params: { category }, // RTK will append this as ?category=...
+      }),
+      // 3. The transformResponse remains the same
+      transformResponse: (response: any) => {
+        return response.articles.map((article: any) => ({
+          ...article,
+          category: article.category || "General",
+          source: {
+            name: article.source.name,
+            id: article.source.id || "newsapi",
+          },
+        }));
+      },
+    }),
+  }),
+});
 
-//   const response = await fetch(url, {
-//     headers: {
-//       Authorization: process.env.NEWS_API_KEY!, // server-side only, not public
-//     },
-//   });
-
-//   const data = await response.json();
-//   return NextResponse.json(data);
-// }
+export const { useGetTopHeadlinesQuery } = newsApi;

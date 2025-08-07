@@ -22,9 +22,9 @@ const PaginationComponent = memo(function PaginationComponent({
     <div className="mt-8 flex justify-center">
       <ReactPaginate
         previousLabel={
-          <span className="flex items-center">
+          <span className="flex items-center justify-center w-full h-full">
             <svg
-              className="w-4 h-4 mr-1"
+              className="w-4 h-4"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -36,14 +36,12 @@ const PaginationComponent = memo(function PaginationComponent({
                 d="M15 19l-7-7 7-7"
               />
             </svg>
-            Prev
           </span>
         }
         nextLabel={
-          <span className="flex items-center">
-            Next
+          <span className="flex items-center justify-center w-full h-full">
             <svg
-              className="w-4 h-4 ml-1"
+              className="w-4 h-4"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -71,7 +69,7 @@ const PaginationComponent = memo(function PaginationComponent({
         nextClassName="relative"
         nextLinkClassName="px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 hover:text-gray-900 rounded-md transition-colors duration-200"
         activeClassName="relative"
-        activeLinkClassName="px-3 py-2 text-sm font-medium text-white bg-blue-600 border border-blue-600 rounded-md"
+        activeLinkClassName="px-3 py-2 text-sm font-medium text-black bg-blue-600 border border-blue-600 rounded-md"
         disabledClassName="opacity-50 cursor-not-allowed"
         disabledLinkClassName="pointer-events-none"
         forcePage={currentPage}
